@@ -1,14 +1,42 @@
 asect  0x00
 
-ldi r0, 0x00
-ld r0, r0
-ldi r1, 0x01
-ld r1, r1  
-add r1, r0
-ldi r3, 0x02
-st r3, r0
-halt        
-
+ldi r0, 0b11110000 
+ldi r1, 2
+st r0, r1
+inc r0
+st r0, r1
+inc r0
+st r0, r1
+inc r0
+st r0, r1
+inc r0
+st r0, r1
+inc r0
+st r0, r1
+inc r0
+st r0, r1
+inc r0
+st r0, r1
+inc r0
+st r0, r1
+ldi r0, 0b11110000
+ldi r1, 3
+st r0, r1
+inc r0
+st r0, r1
+inc r0
+st r0, r1
+inc r0
+st r0, r1
+inc r0
+st r0, r1
+inc r0
+st r0, r1
+inc r0
+st r0, r1
+inc r0
+st r0, r1
+halt
 end
 
 
