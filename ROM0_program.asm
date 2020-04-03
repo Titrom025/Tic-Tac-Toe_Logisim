@@ -13,9 +13,7 @@ scankeyboard:
 	
 	ldi r2, 3
 	st r1, r2
-	
 	osix 0b00010000
-	
 
 chooserandscreen:
 	ldi r0, 0b11111011
