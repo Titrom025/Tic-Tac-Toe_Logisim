@@ -1,5 +1,14 @@
 asect  0x00
-tst r0
+ldi r0, 0b11110000
+ldi r1, 0b11111111
+
+
+do
+	inc r0
+	st r0, r2
+	cmp r1, r0
+until le
+
 scankeyboard:
 	ldi r0, 0b11111010
 	do
@@ -37,6 +46,8 @@ chooserandscreen:
 	
 	ldi r3, 2
 	st r2, r3
+	
+	osix 0b00100000
 
 br scankeyboard
 
