@@ -17,7 +17,7 @@
 
 
 # Running Tic-Tac-Toe
-### To run game download project from github and open file <code>Tic-Tac-Toe.circ</code> in Logismim  
+**To run game download project from github and open file <code>Tic-Tac-Toe.circ</code> in Logisim**  
 Check, that <code>Simulate -> Tick Frequency</code> set not less than 256  
 Then press enable simulation in <code>Simulate -> Simulation Enabled</code>  
 Now it is possible to press buttons and put X on field  
