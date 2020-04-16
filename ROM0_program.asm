@@ -28,20 +28,18 @@ chooserandscreen:
 	ldi r0, 0b11111011
 	ld r0, r2
 		
-	ldi r3, 9
+	ldi r3, 0xF9
 	cmp r3, r2
 	bmi chooserandscreen
 		
-	tst r2
-	ble chooserandscreen
 		
-	ldi r3, 0b11110000
-	or r3, r2
+	ldi r3, 0xF0
+	cmp r3, r2
+	beq chooserandscreen
+		
 		
 	ld r2, r3
-	
 	tst r3
-	
 	bnz	chooserandscreen
 	
 	ldi r3, 2

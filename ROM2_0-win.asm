@@ -2,7 +2,7 @@ asect 0x00
 ldi r0, 0b11110001
 ld r0, r1
 ldi r2, 2
-ldi r3, 0x31 # End of main program
+ldi r3, 0x30 # End of main program
 if 
 cmp r2, r1
 is z
