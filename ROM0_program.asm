@@ -22,7 +22,18 @@ scankeyboard:
 	
 	ldi r2, 3
 	st r1, r2
-	osix 0b00010000
+	
+	ldi r1, 0b11111101
+	ld r1, r2
+
+	if
+	tst r2
+	is gt
+		ldi r0, 0b11111100
+		st r0, r2
+		halt
+	fi
+			
 
 chooserandscreen:
 	ldi r0, 0b11111011
@@ -45,7 +56,16 @@ chooserandscreen:
 	ldi r3, 2
 	st r2, r3
 	
-	osix 0b00100000
+	ldi r1, 0b11111101
+	ld r1, r2
+
+	if
+	tst r2
+	is gt
+		ldi r0, 0b11111100
+		st r0, r2
+		halt
+	fi
 
 br scankeyboard
 
